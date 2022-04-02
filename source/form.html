@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="../images/mishka-logo-mobile.svg" width="86" height="35"
+      <img class="main-header__logo-image" src="../source/images/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип 'Мишка'">
     </a>
     <nav class="main-nav">
@@ -63,19 +63,19 @@
       заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <section class="product-parametrs">
       <h2 class="visually-hidden">форма заказа товара</h2>
-      <form class="product-parametrs__form" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="product-parametrs__form form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="product-parametrs__set">
           <legend class="product-parametrs__tittle">Тип</legend>
           <ul class="product-parametrs__list">
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="radio" name="Аксессуар для интерьера" checked>
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="radio" name="Аксессуар для интерьера" checked>
                 Аксессуар для интерьера
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="radio" name="Детская игрушка">
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="radio" name="Детская игрушка">
                 Детская игрушка
               </label>
             </li>
@@ -85,38 +85,38 @@
           <legend class="product-parametrs__tittle">Цвет</legend>
           <ul class="product-parametrs__list">
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="checkbox" name="Белый" checked>
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="checkbox" name="Цвет" value="Белый" checked>
                 Белый
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="checkbox" name="Серый" checked>
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="checkbox" name="Цвет" value="Серый" checked>
                 Серый
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="checkbox" name="Тиффани">
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="checkbox" name="Цвет" value="Тиффани">
                 Тиффани
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="checkbox" name="Черный">
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="checkbox" name="Цвет" value="Черный">
                 Черный
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="checkbox" name="Розовый">
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="checkbox" name="Цвет" value="Розовый">
                 Розовый
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="checkbox" name="Оранжевый">
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="checkbox" name="Цвет" value="Оранжевый">
                 Оранжевый
               </label>
             </li>
@@ -126,35 +126,38 @@
           <legend class="product-parametrs__tittle">ФИО</legend>
           <ul class="product-parametrs__list">
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="text" name="Имя:" placeholder="Введите ваше имя*">
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="text" name="Имя:" placeholder="Введите ваше имя*">
                 Имя:
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="text" name="Фамилия:" placeholder="Укажите фамилию*">
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="text" name="Фамилия:" placeholder="Укажите фамилию*">
                 Фамилия:
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__control control">
-                <input class="control__input" type="text" name="Отчество:" placeholder="Отчество, если желаете">
+              <label class="product-parametrs__control">
+                <input class="product-parametrs__input" type="text" name="Отчество:" placeholder="Отчество, если желаете">
                 Отчество:
               </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__tittle" for="tel">тел</label>
-              <input class="control__input" type="tel" name="тел" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <label class="product-parametrs__tittle" for="tel">тел
+                <input class="product-parametrs__input" type="tel" name="тел" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__tittle" for="mail">E-mail</label>
-              <input class="control__input" type="email" name="E-mail" id="mail" placeholder="Ваш Email*">
+              <label class="product-parametrs__tittle" for="mail">E-mail
+                <input class="product-parametrs__input" type="email" name="E-mail" id="mail" placeholder="Ваш Email*">
+              </label>
             </li>
             <li class="product-parametrs__item">
-              <label class="product-parametrs__tittle" for="description">Доп</label>
-              <input class="control__input" type="text" name="description" id="description"
-                placeholder="Опишите все ваши пожелания к заказу">
+              <label class="product-parametrs__tittle" for="description">Доп
+                <textarea class="product-parametrs__input" name="description" id="description"
+                  placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </label>
             </li>
           </ul>
           <span class="product-parametrs__note">*Поля обязательны для заполнения</span>
