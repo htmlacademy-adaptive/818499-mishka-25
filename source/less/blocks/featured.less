@@ -25,3 +25,32 @@
   line-height: 24px;
   color: #444444;
 }
+
+.featured {
+  margin: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 50px;
+  }
+
+  .featured__image {
+    width: 334px;
+    height: 404px;
+  }
+
+  .featured__tittle-wrapper {
+    display: flex;
+    width: 665px;
+    justify-content: space-between;
+  }
+
+  .featured__wrapper {
+    width: 292px;
+    margin: 0;
+  }
+}

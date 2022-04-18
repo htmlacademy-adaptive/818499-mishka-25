@@ -1,3 +1,7 @@
+.reviews__wrapper {
+  margin: 0 30px;
+}
+
 .reviews__tittle {
   font-size: 25px;
   font-weight: 700;
@@ -5,6 +9,7 @@
 }
 
 .reviews__item {
+  margin: 0;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
@@ -21,4 +26,36 @@
 .reviews__contacts-mail {
   font-weight: 400;
   font-size: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reviews__contacts,
+  .reviews__contacts-mail {
+    width: 292px;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    width: 50px;
+    height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__item {
+    width: 875px;
+  }
+
+  .reviews__wrapper {
+    margin: 0;
+  }
+
+  .reviews {
+    margin: 0 50px;
+  }
 }

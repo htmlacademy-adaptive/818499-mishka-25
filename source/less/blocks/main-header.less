@@ -1,0 +1,28 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.main-header__logo {
+  height: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    flex-direction: row;
+    height: 160px;
+  }
+
+  .main-header__logo {
+    min-width: 370px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    order: 2;
+    width: 150px;
+  }
+}

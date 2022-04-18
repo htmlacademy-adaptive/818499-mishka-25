@@ -6,7 +6,32 @@
 
 .about__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.about__wrapper {
+  margin: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .about__list {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__list {
+    gap: 50px;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+  }
 }
