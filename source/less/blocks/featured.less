@@ -26,16 +26,12 @@
   color: #444444;
 }
 
-.featured {
-  margin: 0 30px;
-}
-
 @media (min-width: @tablet-width) {
   .featured {
-    margin: 0 50px;
     padding-bottom: 130px;
     display: grid;
-    grid-template-columns: 295px 1fr;
+    grid-template-columns: 295px 335px;
+    justify-content: center;
   }
 
   .featured__image {
@@ -48,7 +44,7 @@
 
 @media (min-width: @desktop-width) {
   .featured {
-    grid-template-columns: 100px 1fr 1fr;
+    grid-template-columns: 100px 1fr 636px;
   }
 
   .featured__tittle {
