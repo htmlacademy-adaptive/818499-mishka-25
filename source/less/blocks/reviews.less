@@ -30,8 +30,23 @@
 
 @media (min-width: @tablet-width) {
   .reviews__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 1fr;
+  }
+
+  .reviews__item {
+    grid-column-start: 0;
+    grid-column-end: 1;
+  }
+
+  .reviews__buttons-wrapper {
+    align-self: end;
+  }
+
+  .reviews__button {
+    grid-row-start: 1;
+    grid-column-start: 1;
   }
 
   .reviews__contacts,

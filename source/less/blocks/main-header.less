@@ -3,6 +3,7 @@
   flex-direction: column;
   position: relative;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-header__logo {
@@ -12,11 +13,11 @@
 @media (min-width: @tablet-width) {
   .main-header {
     flex-direction: row;
-    height: 160px;
   }
 
   .main-header__logo {
     min-width: 370px;
+    height: 46px;
   }
 }
 
@@ -24,5 +25,10 @@
   .main-header__logo {
     order: 2;
     width: 150px;
+    text-align: center;
+  }
+
+  .main-header {
+    justify-content: space-around;
   }
 }

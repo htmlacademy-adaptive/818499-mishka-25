@@ -12,15 +12,21 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__wrapper {
-    display: flex;
-  }
-
   .main-nav__user {
     order: 2;
   }
 
   .main-nav__services {
     order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__user {
+    order: 3;
+  }
+
+  .main-nav__services {
+    order: 1;
   }
 }
