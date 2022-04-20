@@ -5,6 +5,7 @@
 }
 
 .reviews__item {
+  margin: 0;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
@@ -21,4 +22,48 @@
 .reviews__contacts-mail {
   font-weight: 400;
   font-size: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+  }
+
+  .reviews__item {
+    grid-column-start: 0;
+    grid-column-end: 1;
+  }
+
+  .reviews__buttons-wrapper {
+    align-self: end;
+    display: flex;
+  }
+
+  .reviews__button {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    align-self: center;
+  }
+
+  .reviews__contacts,
+  .reviews__contacts-mail {
+    width: 292px;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    width: 50px;
+    height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__item {
+    width: 875px;
+  }
+
+  .reviews__wrapper {
+    margin: 0;
+  }
 }

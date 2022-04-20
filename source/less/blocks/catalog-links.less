@@ -12,3 +12,22 @@
 .catalog-links__toy {
   background-color: #56c3b2;
 }
+
+.catalog-links {
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-links {
+    display: grid;
+    justify-content: center;
+    min-width: 668px;
+    grid-template-columns: 334px 334px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-links {
+    grid-template-columns: 525px 525px;
+  }
+}

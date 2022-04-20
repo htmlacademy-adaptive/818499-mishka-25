@@ -1,0 +1,34 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-header__logo {
+  height: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    flex-direction: row;
+  }
+
+  .main-header__logo {
+    min-width: 370px;
+    height: 46px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    order: 2;
+    width: 150px;
+    text-align: center;
+  }
+
+  .main-header {
+    justify-content: space-around;
+  }
+}

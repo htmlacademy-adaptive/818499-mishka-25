@@ -1,11 +1,19 @@
-.site-list {
-  list-style-type: none;
-}
-
 .site-list__link {
   color: #000000;
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    height: 90px;
+    display: flex;
+    align-items: center;
+  }
+
+  .site-list__search {
+    width: 82px;
+  }
 }

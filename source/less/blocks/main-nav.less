@@ -1,0 +1,32 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__toggle {
+  order: 4;
+  position: absolute;
+  right: 30px;
+  bottom: 150px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__user {
+    order: 2;
+  }
+
+  .main-nav__services {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__user {
+    order: 3;
+  }
+
+  .main-nav__services {
+    order: 1;
+  }
+}

@@ -25,3 +25,40 @@
   line-height: 24px;
   color: #444444;
 }
+
+@media (min-width: @tablet-width) {
+  .featured {
+    padding-bottom: 130px;
+    display: grid;
+    grid-template-columns: 295px 335px;
+    justify-content: center;
+  }
+
+  .featured__image {
+    width: 334px;
+    height: 404px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .featured {
+    grid-template-columns: 175px 1fr 525px;
+  }
+
+  .featured__tittle {
+    grid-column: 2 / 4;
+  }
+
+  .featured__week-product {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+  }
+
+  .featured__image {
+    grid-column: 3 / 4;
+    width: 525px;
+    height: 636px;
+  }
+}
