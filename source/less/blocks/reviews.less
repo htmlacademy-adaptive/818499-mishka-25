@@ -27,8 +27,7 @@
 @media (min-width: @tablet-width) {
   .reviews__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr min-content;
   }
 
   .reviews__item {
@@ -38,11 +37,13 @@
 
   .reviews__buttons-wrapper {
     align-self: end;
+    display: flex;
   }
 
   .reviews__button {
     grid-row-start: 1;
     grid-column-start: 1;
+    align-self: center;
   }
 
   .reviews__contacts,
