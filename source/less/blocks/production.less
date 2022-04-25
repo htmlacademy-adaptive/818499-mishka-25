@@ -1,0 +1,28 @@
+@media (min-width: @tablet-width) {
+  .production {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production {
+    flex-direction: row;
+    grid-column: 1 / 4;
+  }
+
+  .production__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .production__tittle-wrapper {
+    width: 350px;
+  }
+
+  .production__description-wrapper {
+    width: 350px;
+  }
+}

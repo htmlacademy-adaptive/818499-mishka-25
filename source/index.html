@@ -10,30 +10,27 @@
 
 <body class="page__body">
   <header class="main-header container">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
-        alt="Логотип 'Мишка'">
-    </a>
-    <nav class="main-nav main-nav__services">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list  site-list">
-        <li class="site-list__item">
+    <nav class="main-nav container">
+      <div class="main-header__logo-wrapper">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
+            alt="Логотип 'Мишка'">
+        </a>
+      </div>
+      <ul class="main-nav__list main-nav__services">
+        <li class="site-list site-list__item">
           <a class="site-list__link" href="catalog.html">
             Каталог товаров
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list site-list__item">
           <a class="site-list__link" href="form.html">
             Вязание на заказ
           </a>
         </li>
       </ul>
-    </nav>
-    <nav class="main-nav main-nav__user">
-      <ul class="main-nav__list  site-list">
-        <li class="site-list__item site-list__search">
+      <ul class="main-nav__list main-nav__user">
+        <li class="site-list site-list__item site-list__search">
           <a class="site-list__link" href="#">
             <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.2"
@@ -43,7 +40,7 @@
             <span class="visually-hidden">Поиск по сайту</span>
           </a>
         </li>
-        <li class="site-list__item site-list__cart">
+        <li class="site-list site-list__item site-list__cart">
           <a class="site-list__link" href="#">
             <svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.2"
@@ -54,12 +51,27 @@
           </a>
         </li>
       </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list main-nav__promo site-list">
+        <li class="site-list__item site-list__item--new">
+          <a class="site-list__link site-list__link--new" href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item site-list__item--sell">
+          <a class="site-list__link site-list__link--sell" href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item site-list__item--delivery">
+          <a class="site-list__link site-list__link--delivery" href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
     </nav>
-  </header>
-  <main class="main-container">
-    <h1 class="main-container__tittle container">
+    <h1 class="main-header__tittle container">
       Милые штуки ручной работы для дома
     </h1>
+  </header>
+  <main class="main-container">
+
     <ul class="catalog-links container">
       <li class="catalog-links__item catalog-links__interior">
         <a class="catalog-links__link">
