@@ -6,6 +6,19 @@
   line-height: 24px;
 }
 
+.site-list__link--delivery {
+  margin-left: auto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.site-list__item--sell,
+.site-list__item--new,
+.site-list__item--delivery {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     height: 90px;
@@ -15,5 +28,17 @@
 
   .site-list__search {
     width: 82px;
+  }
+
+  .site-list__item--delivery {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item--sell,
+  .site-list__item--new {
+    display: flex;
   }
 }
