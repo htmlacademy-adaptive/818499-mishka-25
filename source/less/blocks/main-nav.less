@@ -2,32 +2,86 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
 }
 
 .main-nav__toggle {
   order: 4;
   position: absolute;
-  right: 30px;
-  bottom: 150px;
+  right: 32px;
+  top: 32px;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 14px;
+  background: none;
 }
 
 .main-nav__services {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#000000, 30%);
+  box-shadow:
+    0 6px 0 0 fade(#000000, 30%),
+    0 12px 0 0 fade(#000000, 30%);
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    right: 5px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#000000, 30%);
+  }
+}
+
+.main-nav__promo {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__user {
     order: 2;
     display: flex;
+    max-width: 348px;
   }
 
   .main-nav {
@@ -36,6 +90,11 @@
     justify-content: space-between;
     align-items: center;
     max-width: 668px;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    width: auto;
   }
 
   .main-nav__services {
@@ -48,6 +107,10 @@
     order: 4;
     display: flex;
     padding: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -71,12 +134,12 @@
   }
 
   .main-nav__list {
-    width: 400px;
+    max-width: 400px;
     justify-content: space-between;
   }
 
   .main-nav__promo {
-    width: 100%;
+    min-width: 1050px;
     justify-content: flex-start;
   }
 }
