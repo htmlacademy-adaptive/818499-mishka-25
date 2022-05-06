@@ -10,7 +10,7 @@
 .featured-stats__parameters {
   display: flex;
   flex-direction: row;
-  padding: 14px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #ececec;
 }
 
@@ -19,5 +19,30 @@
 }
 
 .featured-stats__meaning--name {
-  width: 40%;
+  width: 38%;
+}
+
+@media (min-width: @tablet-width) {
+  .featured-stats {
+    margin-bottom: 58px;
+    max-width: 292px;
+  }
+
+  .featured-stats__parameters {
+    padding: 9px 0;
+  }
+
+  .featured-stats__meaning--name {
+    width: 33%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .featured-stats__parameters {
+    padding: 0 0 21px 0;
+  }
+
+  .featured-stats {
+    margin-bottom: 99px;
+  }
 }

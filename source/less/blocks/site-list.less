@@ -16,7 +16,6 @@
 .site-list__item {
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-  width: 100%;
   position: relative;
   display: block;
   padding-top: 27px;
@@ -27,7 +26,7 @@
 .site-list__search-icon,
 .site-list__cart-icon {
   position: absolute;
-  top: 29px;
+  top: 35px;
   left: 31px;
 }
 
@@ -45,9 +44,13 @@
   }
 
   .site-list__item {
-    padding: 0;
+    padding: 0 0 28px 0;
     border: none;
     box-sizing: border-box;
+  }
+
+  .site-list__list--cart {
+    padding: 0;
   }
 
   .site-list__link {
@@ -90,6 +93,12 @@
 
   .site-list__item--catalog {
     border-right: 1px solid #ececec;
+    padding-bottom: 0;
+    padding-right: 17px;
+  }
+
+  .site-list__item--form {
+    padding: 0 0 0 35px;
   }
 
   .site-list__item--form,
@@ -97,8 +106,16 @@
     padding-left: 35px;
   }
 
+  .site-list__item--sell {
+    padding-left: 53px;
+  }
+
   .site-list__link {
     font-size: 17px;
+  }
+
+  .site-list__cart {
+    padding: 0;
   }
 
   .site-list__link--new,

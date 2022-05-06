@@ -1,7 +1,7 @@
 .featured {
   margin-top: 31px;
   position: relative;
-  padding-bottom: 36px;
+  padding-bottom: 38px;
 }
 
 .featured__tittle {
@@ -18,6 +18,7 @@
   text-transform: uppercase;
   color: #63d1bb;
   margin: 0;
+  padding-top: 4px;
 }
 
 .featured__description {
@@ -25,7 +26,7 @@
   font-weight: 400;
   line-height: 24px;
   color: #444444;
-  margin: 18px 0 28px;
+  margin: 18px 0 17px;
 }
 
 .featured__price {
@@ -33,6 +34,8 @@
   font-weight: 700;
   line-height: 24px;
   color: #444444;
+  text-align: center;
+  margin: 22px 0 22px 0;
 }
 
 .featured__button {
@@ -46,7 +49,7 @@
   display: block;
   width: 100%;
   height: 7px;
-  background-image: url("/img/zigzag-line-desktop.svg");
+  background-image: url("../img/zigzag-line-desktop.svg");
   background-repeat: repeat-x;
   background-position: 8px 0;
   background-size: 320px 7px;
@@ -55,6 +58,7 @@
 @media (min-width: @tablet-width) {
   .featured {
     padding-bottom: 53px;
+    margin-top: 56px;
   }
 
   .featured::after {
@@ -77,47 +81,55 @@
   .featured__week-product {
     text-align: center;
     width: 100px;
-  }
-
-  .featured-stats {
-    max-width: 292px;
-    margin-bottom: 57px;
+    padding: 0 13px 4px 0;
   }
 
   .featured__description {
     max-width: 292px;
     margin-top: 37px;
-    margin-bottom: 48px;
+    margin-bottom: 39px;
     font-size: 17px;
+    line-height: 30px;
   }
 
   .featured__image {
     width: 334px;
     height: 404px;
     position: absolute;
-    top: 90px;
+    top: 101px;
     left: 50%;
   }
 
   .featured__price {
     text-align: center;
     max-width: 292px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     font-size: 20px;
   }
 
   .featured__button {
     max-width: 292px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .featured {
     min-height: 636px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-bottom: 13px;
+  }
+
+  .featured::after {
+    width: 1050px;
+    height: 23px;
+    background-position: 48px 0;
+    background-size: 1050px 23px;
   }
 
   .featured__wrapper {
-    margin-left: 32px;
+    margin-left: 19px;
     justify-content: flex-start;
   }
 
@@ -129,16 +141,23 @@
     z-index: 1;
   }
 
+  .featured__week-product {
+    padding: 0 0 7px 13px;
+    line-height: 17px;
+  }
+
   .featured-stats {
+    margin-bottom: 114px;
     margin-left: 175px;
   }
 
   .featured__description {
     margin-left: 175px;
+    margin-bottom: 55px;
   }
 
   .featured__image {
-    top: 0;
+    top: -60px;
     z-index: 0;
     width: 525px;
     height: 636px;
