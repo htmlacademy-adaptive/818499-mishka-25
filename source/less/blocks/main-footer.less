@@ -3,3 +3,29 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+  }
+
+  .main-footer__social {
+    width: 145px;
+  }
+
+  .main-footer__copyright {
+    width: 180px;
+    padding: 0 0 5px 0;
+  }
+
+  .main-footer__logo {
+    display: block;
+  }
+}

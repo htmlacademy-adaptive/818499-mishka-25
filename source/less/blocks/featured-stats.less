@@ -3,4 +3,46 @@
   font-weight: 400;
   line-height: 20px;
   color: #444444;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.featured-stats__parameters {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.featured-stats__meaning {
+  padding: 0;
+}
+
+.featured-stats__meaning--name {
+  width: 38%;
+}
+
+@media (min-width: @tablet-width) {
+  .featured-stats {
+    margin-bottom: 58px;
+    max-width: 292px;
+  }
+
+  .featured-stats__parameters {
+    padding: 9px 0;
+  }
+
+  .featured-stats__meaning--name {
+    width: 33%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .featured-stats__parameters {
+    padding: 0 0 21px 0;
+  }
+
+  .featured-stats {
+    margin-bottom: 99px;
+  }
 }

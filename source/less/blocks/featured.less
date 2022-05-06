@@ -1,7 +1,14 @@
+.featured {
+  margin-top: 31px;
+  position: relative;
+  padding-bottom: 38px;
+}
+
 .featured__tittle {
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+  margin: 0;
 }
 
 .featured__week-product {
@@ -10,6 +17,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #63d1bb;
+  margin: 0;
+  padding-top: 4px;
 }
 
 .featured__description {
@@ -17,6 +26,7 @@
   font-weight: 400;
   line-height: 24px;
   color: #444444;
+  margin: 18px 0 17px;
 }
 
 .featured__price {
@@ -24,41 +34,140 @@
   font-weight: 700;
   line-height: 24px;
   color: #444444;
+  text-align: center;
+  margin: 22px 0 22px 0;
+}
+
+.featured__button {
+  width: 100%;
+}
+
+.featured::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 7px;
+  background-image: url("../img/zigzag-line-desktop.svg");
+  background-repeat: repeat-x;
+  background-position: 8px 0;
+  background-size: 320px 7px;
 }
 
 @media (min-width: @tablet-width) {
   .featured {
-    padding-bottom: 130px;
-    display: grid;
-    grid-template-columns: 295px 335px;
+    padding-bottom: 53px;
+    margin-top: 56px;
+  }
+
+  .featured::after {
+    height: 17px;
+    background-position: 19px 0;
+    background-size: 768px 17px;
+  }
+
+  .featured__wrapper {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .featured__tittle {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .featured__week-product {
+    text-align: center;
+    width: 100px;
+    padding: 0 13px 4px 0;
+  }
+
+  .featured__description {
+    max-width: 292px;
+    margin-top: 37px;
+    margin-bottom: 39px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .featured__image {
     width: 334px;
     height: 404px;
-    grid-column: 2 / 3;
-    grid-row: 2 / 5;
+    position: absolute;
+    top: 101px;
+    left: 50%;
+  }
+
+  .featured__price {
+    text-align: center;
+    max-width: 292px;
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+
+  .featured__button {
+    max-width: 292px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .featured {
-    grid-template-columns: 175px 1fr 525px;
+    min-height: 636px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-bottom: 13px;
+  }
+
+  .featured::after {
+    width: 1050px;
+    height: 23px;
+    background-position: 48px 0;
+    background-size: 1050px 23px;
+  }
+
+  .featured__wrapper {
+    margin-left: 19px;
+    justify-content: flex-start;
   }
 
   .featured__tittle {
-    grid-column: 2 / 4;
+    margin-left: 43px;
+    order: 3;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 1;
   }
 
   .featured__week-product {
-    grid-column: 1 / 2;
-    grid-row: 1 / 6;
+    padding: 0 0 7px 13px;
+    line-height: 17px;
+  }
+
+  .featured-stats {
+    margin-bottom: 114px;
+    margin-left: 175px;
+  }
+
+  .featured__description {
+    margin-left: 175px;
+    margin-bottom: 55px;
   }
 
   .featured__image {
-    grid-column: 3 / 4;
+    top: -60px;
+    z-index: 0;
     width: 525px;
     height: 636px;
+  }
+
+  .featured__price {
+    margin-left: 175px;
+  }
+
+  .featured__button {
+    margin-left: 175px;
   }
 }

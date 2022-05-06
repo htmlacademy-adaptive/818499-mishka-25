@@ -13,6 +13,23 @@
   line-height: 24px;
 }
 
+.site-list__item {
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+}
+
+.site-list__search-icon,
+.site-list__cart-icon {
+  position: absolute;
+  top: 35px;
+  left: 31px;
+}
+
 .site-list__item--sell,
 .site-list__item--new,
 .site-list__item--delivery {
@@ -26,13 +43,44 @@
     align-items: center;
   }
 
-  .site-list__search {
-    width: 82px;
+  .site-list__item {
+    padding: 0 0 28px 0;
+    border: none;
+    box-sizing: border-box;
   }
 
-  .site-list__item--delivery {
+  .site-list__list--cart {
+    padding: 0;
+  }
+
+  .site-list__link {
+    width: 167px;
+    font-size: 15px;
+  }
+
+  .site-list__link--search {
+    font-size: 0;
+    min-height: 88px;
+  }
+
+  .site-list__link--cart {
+    width: 264px;
+    text-align: right;
+    font-size: 17px;
+  }
+
+  .site-list__search {
+    width: 84px;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+
+  .site-list__item--delivery,
+  .site-list__link--delivery {
     display: flex;
     margin-left: auto;
+    width: 259px;
+    justify-content: flex-end;
   }
 }
 
@@ -40,5 +88,48 @@
   .site-list__item--sell,
   .site-list__item--new {
     display: flex;
+    width: auto;
+  }
+
+  .site-list__item--catalog {
+    border-right: 1px solid #ececec;
+    padding-bottom: 0;
+    padding-right: 17px;
+  }
+
+  .site-list__item--form {
+    padding: 0 0 0 35px;
+  }
+
+  .site-list__item--form,
+  .site-list__item--sell {
+    padding-left: 35px;
+  }
+
+  .site-list__item--sell {
+    padding-left: 53px;
+  }
+
+  .site-list__link {
+    font-size: 17px;
+  }
+
+  .site-list__cart {
+    padding: 0;
+  }
+
+  .site-list__link--new,
+  .site-list__link--sell,
+  .site-list__link--delivery {
+    font-size: 15px;
+  }
+
+  .site-list__link--delivery {
+    text-align: right;
+    width: 260px;
+  }
+
+  .site-list__link--search {
+    font-size: 0;
   }
 }
