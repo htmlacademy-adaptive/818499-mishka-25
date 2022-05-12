@@ -11,7 +11,7 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-nav  main-nav--closed main-nav--nojs">
+      <nav class="main-nav  main-nav--opened main-nav--nojs">
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo" href="index.html">
             <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
@@ -242,7 +242,34 @@
     </div>
   </footer>
 
-  <script src="../js/script.js"></script>
+  <section class="modal modal--opened">
+    <div class="modal__background"></div>
+    <div class="modal__body">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form">
+        <fieldset class="modal__set">
+          <legend class="modal__set-title">Выберите размер:</legend>
+          <div class="modal__size">
+            <div class="modal__item">
+              <input class="modal__input" type="radio" name="size" value="S" id="s" checked>
+              <label class="modal__label" for="s">S</label>
+            </div>
+            <div class="modal__item">
+              <input class="modal__input" type="radio" name="size" value="M" id="m" checked>
+              <label class="modal__label" for="s">M</label>
+            </div>
+            <div class="modal__item">
+              <input class="modal__input" type="radio" name="size" value="L" id="l" checked>
+              <label class="modal__label" for="s">L</label>
+            </div>
+          </div>
+        </fieldset>
+        <button class="modal__button">Добавить</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

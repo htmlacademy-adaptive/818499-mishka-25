@@ -32,7 +32,7 @@
 
 .product-list__card {
   border: 1px solid #ececec;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,6 +63,11 @@
 .product-list__cart {
   border: none;
   background-color: inherit;
+  padding-right: 0;
+}
+
+a.product-list__button {
+  font-size: 17px;
 }
 
 
@@ -71,6 +76,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 68px;
+    margin-bottom: 11px;
   }
 
   .product-list__card {
@@ -83,6 +89,10 @@
   .product-list__link {
     width: 334px;
     flex-shrink: 0;
+  }
+
+  .product-list__price {
+    font-size: 17px;
   }
 
   .product-list__info {
@@ -158,12 +168,6 @@
 
   .product-list__footer {
     padding-top: 23px;
-  }
-
-  .production__video-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   .product-list__footer::after {
