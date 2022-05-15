@@ -14,8 +14,12 @@
       <nav class="main-nav  main-nav--opened main-nav--nojs">
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo" href="index.html">
-            <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
-              alt="Логотип 'Мишка'">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
+                alt="Логотип 'Мишка'">
+            </picture>
           </a>
         </div>
         <ul class="main-nav__list main-nav__services">
@@ -82,9 +86,10 @@
         <li class="product-list__card">
           <a class="product-list__link" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.png, photo-1-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png, img/photo-1-tablet@2x.png">
-              <img class="product-list__image" src="img/photo-1-mobile.png" srcset="img/photo-1-mobile@2x.png" alt="изображение зайчика">
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.png 1x, img/photo-1-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png 1x, img/photo-1-tablet@2x.png 2x">
+              <img class="product-list__image" src="img/photo-1-mobile.png" srcset="img/photo-1-mobile@2x.png 2x"
+                alt="изображение зайчика">
             </picture>
           </a>
           <div class="product-list__info">
@@ -106,9 +111,10 @@
         <li class="product-list__card product-list__card--cart">
           <a class="product-list__link" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.png, photo-2-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png, img/photo-2-tablet@2x.png">
-              <img class="product-list__image" src="img/photo-2-mobile.png" srcset="img/photo-2-mobile@2x.png" alt="Корзинка для белья">
+              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.png 1x, img/photo-2-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png 1x, img/photo-2-tablet@2x.png 2x">
+              <img class="product-list__image" src="img/photo-2-mobile.png" srcset="img/photo-2-mobile@2x.png 2x"
+                alt="Корзинка для белья">
             </picture>
           </a>
           <div class="product-list__info">
@@ -130,9 +136,10 @@
         <li class="product-list__card product-list__card--big-cart">
           <a class="product-list__link" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.png, photo-3-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png, img/photo-3-tablet@2x.png">
-              <img class="product-list__image" src="img/photo-3-mobile.png" srcset="img/photo-3-mobile@2x.png" alt="Большая корзинка для игрушек">
+              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.png 1x, img/photo-3-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png 1x, img/photo-3-tablet@2x.png 2x">
+              <img class="product-list__image" src="img/photo-3-mobile.png" srcset="img/photo-3-mobile@2x.png 2x"
+                alt="Большая корзинка для игрушек">
             </picture>
           </a>
           <div class="product-list__info">
@@ -158,9 +165,10 @@
             </div>
             <div class="production__video-wrapper">
               <picture>
-                <source media="(min-width: 1150px)" srcset="img/video-desktop.png, img/video-desktop2@x.png">
-                <source media="(min-width: 768px)" srcset="img/video-tablet.png, img/video-tablet@2x.png">
-                <img class="production__image" src="img/video-mobile.png"  srcset="img/video-mobile@2x.png" srcset="img/video-mobile@2x.png 2x" alt="Видео процесса">
+                <source media="(min-width: 1150px)" srcset="img/video-desktop.png 1x, img/video-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
+                <img class="production__image" src="img/video-mobile.png" srcset="img/video-mobile@2x.png 2x"
+                  srcset="img/video-mobile@2x.png 2x" alt="Видео процесса">
               </picture>
               <button class="production__button">
                 <svg class="production__play-button" width="101" height="77" viewBox="0 0 101 77"
@@ -287,7 +295,7 @@
     </div>
   </section>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
