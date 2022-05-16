@@ -1866,6 +1866,7 @@ a.product-list__button {
   flex-wrap: wrap;
   padding: 0;
   width: 100%;
+  justify-content: center;
 }
 .main-header__logo {
   height: 80px;
@@ -1906,15 +1907,20 @@ a.product-list__button {
 .main-header__logo-wrapper {
   margin: 22px 0 17px 0;
 }
-.main-header__wrapper {
-  width: 100%;
-  min-height: 79px;
-}
-.main-header__wrapper .main-nav--opened {
-  position: absolute;
-  z-index: 1;
-  background-color: #ffffff;
-  width: 100%;
+@media (max-width: 767px) {
+  .main-header__wrapper {
+    width: 100%;
+    min-height: 79px;
+  }
+  .main-header__wrapper .main-nav--opened {
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 100%;
+  }
+  .main-header__wrapper .main-nav--nojs {
+    position: inherit;
+  }
 }
 @media (min-width: 768px) {
   .main-header {
@@ -1963,6 +1969,12 @@ a.product-list__button {
     padding-bottom: 86px;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-header__tittle-wrapper--index {
+    background-image: url("../img/hero-tablet@2x.png");
+    background-size: 768px auto;
+  }
+}
 @media (min-width: 1150px) {
   .main-header__logo {
     order: 2;
@@ -1997,6 +2009,12 @@ a.product-list__button {
   .main-header__tittle-wrapper--form {
     background-size: auto 34px;
     padding: 10px 0 117px;
+  }
+}
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1150px) and (min-resolution: 2dppx) {
+  .main-header__tittle-wrapper--index {
+    background-image: url("../img/hero-desktop@2x.png");
+    background-size: 1150px auto;
   }
 }
 @media (min-width: 767px) {
