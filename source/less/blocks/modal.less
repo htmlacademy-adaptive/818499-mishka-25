@@ -109,17 +109,26 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
 }
 
 
 @media (min-width: @tablet-width) {
   .modal__body {
     width: 566px;
+    min-height: 336px;
+    padding: 36px 30px 30px 30px;
   }
 
   .modal__title {
     font-size: 30px;
     line-height: 57px;
+    margin: 0 0 12px;
+  }
+
+  .modal__set {
+    margin: 0 0 31px;
   }
 
   .modal__form {
@@ -129,9 +138,14 @@
 
   .modal__set-title {
     font-size: 17px;
+    margin-bottom: 19px;
   }
 
   .modal__label {
     min-width: 112px;
+  }
+
+  .modal__button {
+    padding: 19px 15px 17px 15px;
   }
 }

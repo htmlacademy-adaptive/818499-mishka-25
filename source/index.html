@@ -6,6 +6,8 @@
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon-16.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -14,8 +16,12 @@
       <nav class="main-nav  main-nav--opened main-nav--nojs">
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo" href="index.html">
-            <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
-              alt="Логотип 'Мишка'">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
+                alt="Логотип 'Мишка'">
+            </picture>
           </a>
         </div>
         <ul class="main-nav__list main-nav__services">
@@ -115,7 +121,11 @@
             <td class="featured-stats__meaning featured-stats__meaning--value">15 см</td>
           </tr>
         </table>
-        <img class="featured__image" src="img/triple-set-tablet.jpg" alt="корзинки">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg, img/triple-set-tablet@2x.jpg 2x">
+          <img class="featured__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="корзинки">
+        </picture>
         <p class="featured__price">Цена: 990 руб.</p>
         <button class="featured__button button">Заказать</button>
       </div>
@@ -281,7 +291,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal--opened">
+  <section class="modal">
     <div class="modal__background"></div>
     <div class="modal__body">
       <h2 class="modal__title">Добавить в корзину</h2>
@@ -308,7 +318,7 @@
     </div>
   </section>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

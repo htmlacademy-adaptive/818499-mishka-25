@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   padding: 0;
   width: 100%;
+  justify-content: center;
 }
 
 .main-header__logo {
@@ -31,8 +32,14 @@
 .main-header__tittle-wrapper--index {
   background-image: url("../img/hero-mobile.png");
   padding-bottom: 120px;
+  padding-top: 73px;
   background-repeat: no-repeat;
   background-position: center -5px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 .main-header__tittle-wrapper--form {
@@ -47,8 +54,22 @@
   margin: 22px 0 17px 0;
 }
 
-.main-header__wrapper {
-  width: 100%;
+@media (max-width: @mobile-width-only) {
+  .main-header__wrapper {
+    width: 100%;
+    min-height: 79px;
+  }
+
+  .main-header__wrapper .main-nav--opened {
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .main-header__wrapper .main-nav--nojs {
+    position: inherit;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -63,6 +84,11 @@
     order: 1;
   }
 
+  .main-header__logo img {
+    width: 114px;
+    height: auto;
+  }
+
   .main-header__tittle {
     max-width: 670px;
     font-size: 43px;
@@ -72,6 +98,7 @@
   .main-header__logo-wrapper {
     display: flex;
     width: 320px;
+    margin: 22px 0 22px 0;
   }
 
   .main-header__tittle-wrapper--index {
@@ -80,6 +107,11 @@
     padding-bottom: 371px;
     background-position: 50% -92px;
     background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.png");
+      background-size: 768px auto;
+    }
   }
 
   .main-header__tittle-wrapper--form {
@@ -112,6 +144,11 @@
     order: 2;
     display: flex;
     align-items: center;
+    margin: 0 11px 27px 0;
+  }
+
+  .main-header__logo img {
+    width: 150px;
   }
 
   .main-header__tittle {
@@ -125,6 +162,11 @@
     padding-top: 67px;
     padding-bottom: 354px;
     background-position: 50% -93px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.png");
+      background-size: 1150px auto;
+    }
   }
 
   .main-header__tittle-wrapper--catalog {

@@ -14,8 +14,12 @@
       <nav class="main-nav  main-nav--opened main-nav--nojs">
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo" href="index.html">
-            <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
-              alt="Логотип 'Мишка'">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
+                alt="Логотип 'Мишка'">
+            </picture>
           </a>
         </div>
         <ul class="main-nav__list main-nav__services">
@@ -81,7 +85,12 @@
       <ul class="product-list">
         <li class="product-list__card">
           <a class="product-list__link" href="#">
-            <img class="product-list__image" src="img/photo-1-mobile.png" alt="изображение зайчика">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.png 1x, img/photo-1-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png 1x, img/photo-1-tablet@2x.png 2x">
+              <img class="product-list__image" src="img/photo-1-mobile.png" srcset="img/photo-1-mobile@2x.png 2x"
+                alt="изображение зайчика">
+            </picture>
           </a>
           <div class="product-list__info">
             <h3 class="product-list__title">Зайчик-попрыгайчик</h3>
@@ -99,9 +108,14 @@
             </footer>
           </div>
         </li>
-        <li class="product-list__card">
+        <li class="product-list__card product-list__card--cart">
           <a class="product-list__link" href="#">
-            <img class="product-list__image" src="img/photo-2-mobile.png" alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.png 1x, img/photo-2-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png 1x, img/photo-2-tablet@2x.png 2x">
+              <img class="product-list__image" src="img/photo-2-mobile.png" srcset="img/photo-2-mobile@2x.png 2x"
+                alt="Корзинка для белья">
+            </picture>
           </a>
           <div class="product-list__info">
             <h3 class="product-list__title">Корзинка для белья</h3>
@@ -119,12 +133,17 @@
             </footer>
           </div>
         </li>
-        <li class="product-list__card">
+        <li class="product-list__card product-list__card--big-cart">
           <a class="product-list__link" href="#">
-            <img class="product-list__image" src="img/photo-3-mobile.png" alt="Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.png 1x, img/photo-3-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png 1x, img/photo-3-tablet@2x.png 2x">
+              <img class="product-list__image" src="img/photo-3-mobile.png" srcset="img/photo-3-mobile@2x.png 2x"
+                alt="Большая корзинка для игрушек">
+            </picture>
           </a>
           <div class="product-list__info">
-            <h3 class="product-list__title">Большая корзинка для игрушек</h3>
+            <h3 class="product-list__title product-list__card--big-cart-title">Большая корзинка для игрушек</h3>
             <p class="product-list__description">Диаметр 30 см, высота 30 см</p>
             <footer class="product-list__footer">
               <b class="product-list__price">1 500 руб.</b>
@@ -145,8 +164,15 @@
               <h3 class="production__title">Процесс производства</h3>
             </div>
             <div class="production__video-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/video-desktop.png 1x, img/video-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
+                <img class="production__image" src="img/video-mobile.png" srcset="img/video-mobile@2x.png 2x"
+                  srcset="img/video-mobile@2x.png 2x" alt="Видео процесса">
+              </picture>
               <button class="production__button">
-                <svg class="production__play-button" width="101" height="77" viewBox="0 0 101 77" xmlns="http://www.w3.org/2000/svg">
+                <svg class="production__play-button" width="101" height="77" viewBox="0 0 101 77"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M97.0001 18.1C97.0001 18.1 96.1001 11.1 93.2001 7.99997C89.6001 3.99997 85.5001 3.89995 83.7001 3.69995C70.4001 2.69995 50.4001 2.69995 50.4001 2.69995H50.3001C50.3001 2.69995 30.3001 2.69995 17.0001 3.69995C15.1001 3.89995 11.1001 3.99997 7.50011 7.99997C4.70011 11.1 3.7001 18.1 3.7001 18.1C3.7001 18.1 2.80011 26.3 2.80011 34.5V42.2C2.80011 50.4 3.7001 58.6 3.7001 58.6C3.7001 58.6 4.60011 65.6 7.50011 68.7C11.1001 72.7 15.9001 72.6 18.0001 73C25.6001 73.8 50.4001 74 50.4001 74C50.4001 74 70.4001 74 83.7001 73C85.6001 72.8 89.6001 72.7 93.2001 68.7C96.0001 65.6 97.0001 58.6 97.0001 58.6C97.0001 58.6 97.9001 50.4 97.9001 42.2V34.5C97.9001 26.3 97.0001 18.1 97.0001 18.1Z"
                     fill="#63D1BB" />
@@ -242,7 +268,7 @@
     </div>
   </footer>
 
-  <section class="modal modal--opened">
+  <section class="modal">
     <div class="modal__background"></div>
     <div class="modal__body">
       <h2 class="modal__title">Добавить в корзину</h2>
@@ -269,7 +295,7 @@
     </div>
   </section>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
