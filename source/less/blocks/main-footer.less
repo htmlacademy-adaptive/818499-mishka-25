@@ -8,12 +8,29 @@
   display: none;
 }
 
+.main-footer__icon {
+  fill: #000000;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.main-footer__wrapper {
+  flex-wrap: wrap;
+}
+
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 13px;
+    padding-top: 11px;
   }
 
   .main-footer__social {
@@ -27,5 +44,11 @@
 
   .main-footer__logo {
     display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    padding-top: 14px;
   }
 }
