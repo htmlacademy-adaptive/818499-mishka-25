@@ -97,7 +97,7 @@
   .catalog-links::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     display: block;
     width: 100%;
     height: 24px;
@@ -125,13 +125,17 @@
     transform: translateY(-5px);
     transition: transform 250ms;
   }
+
+  .catalog-links__item {
+    min-height: 127px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-links {
     grid-template-columns: 525px 525px;
     min-height: 119px;
-    margin-bottom: 132px;
+    margin-bottom: 124px;
   }
 
   .catalog-links::after {
@@ -143,6 +147,7 @@
     background-image: url("../img/zigzag-tablet.svg");
     background-position-x: center;
     background-size: auto 39px;
+    bottom: 0;
   }
 
   .catalog-links__item {
