@@ -6,7 +6,7 @@
   line-height: 24px;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
@@ -19,16 +19,6 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.site-list__item {
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-  position: relative;
-  display: block;
-  padding-top: 28px;
-  padding-bottom: 25px;
-  padding-left: 76px;
 }
 
 .site-list__link--search {
@@ -46,14 +36,15 @@
 .site-list__search-icon,
 .site-list__cart-icon {
   position: absolute;
-  top: 35px;
-  left: 31px;
+  top: 31px;
+  left: 25px;
   opacity: 0.2;
+}
 
-  &:hover {
-    fill: #63d1bb;
-    opacity: 1;
-  }
+.site-list__link--search:hover .site-list__search-icon,
+.site-list__link--cart:hover .site-list__cart-icon {
+  fill: #63d1bb;
+  opacity: 1;
 
   &:active {
     fill: #63d1bb;
@@ -61,23 +52,11 @@
   }
 }
 
-.site-list__item--sell,
-.site-list__item--new,
-.site-list__item--delivery {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .site-list {
     height: 90px;
     display: flex;
     align-items: center;
-  }
-
-  .site-list__item {
-    padding: 0 0 28px 0;
-    border: none;
-    box-sizing: border-box;
   }
 
   .site-list__link {
@@ -96,57 +75,18 @@
     font-size: 17px;
   }
 
-  .site-list__search {
-    width: 84px;
-    border-right: 1px solid #ececec;
-    border-left: 1px solid #ececec;
-  }
-
-  .site-list__item--delivery,
+  .main-nav__item--delivery,
   .site-list__link--delivery {
     display: flex;
     margin-left: auto;
     width: 259px;
     justify-content: flex-end;
   }
-
-  .site-list__cart {
-    padding: 0;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .site-list__item--sell,
-  .site-list__item--new {
-    display: flex;
-    width: auto;
-  }
-
-  .site-list__item--catalog {
-    border-right: 1px solid #ececec;
-    padding-bottom: 0;
-    padding-right: 17px;
-  }
-
-  .site-list__item--form {
-    padding: 0 0 0 35px;
-  }
-
-  .site-list__item--form,
-  .site-list__item--sell {
-    padding-left: 35px;
-  }
-
-  .site-list__item--sell {
-    padding-left: 53px;
-  }
-
   .site-list__link {
     font-size: 17px;
-  }
-
-  .site-list__cart {
-    padding: 0;
   }
 
   .site-list__link--new,
@@ -162,5 +102,11 @@
 
   .site-list__link--search {
     font-size: 0;
+  }
+
+  .site-list__search-icon,
+  .site-list__cart-icon {
+    top: 35px;
+    left: 32px;
   }
 }
