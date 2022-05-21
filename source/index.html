@@ -61,7 +61,7 @@
     </symbol>
   </svg>
 
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <div class="main-header__wrapper">
       <nav class="main-nav  main-nav--closed main-nav--nojs">
         <div class="main-header__logo-wrapper">
@@ -75,26 +75,26 @@
           </a>
         </div>
         <ul class="main-nav__list main-nav__services">
-          <li class="site-list site-list__item site-list__item--catalog">
+          <li class="site-list main-nav__item main-nav__item--catalog">
             <a class="site-list__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
-          <li class="site-list site-list__item site-list__item--form">
+          <li class="site-list main-nav__item main-nav__item--form">
             <a class="site-list__link" href="form.html">
               Вязание на заказ
             </a>
           </li>
         </ul>
         <ul class="main-nav__list main-nav__user">
-          <li class="site-list site-list__item site-list__search">
+          <li class="site-list main-nav__item main-nav__search">
             <a class="site-list__link site-list__link--search" href="#"> Поиск по сайту
               <svg class="site-list__search-icon" width="18" height="18">
                 <use xlink:href="#icon-search"></use>
               </svg>
             </a>
           </li>
-          <li class="site-list site-list__item site-list__cart">
+          <li class="site-list main-nav__item main-nav__cart">
             <a class="site-list__link site-list__link--cart" href="#">
               <svg class="site-list__cart-icon" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
@@ -107,13 +107,13 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list main-nav__promo site-list">
-          <li class="site-list__item site-list__item--new">
+          <li class="main-nav__item main-nav__item--new">
             <a class="site-list__link site-list__link--new" href="#">Новые поступления</a>
           </li>
-          <li class="site-list__item site-list__item--sell">
+          <li class="main-nav__item main-nav__item--sell">
             <a class="site-list__link site-list__link--sell" href="#">Распродажа</a>
           </li>
-          <li class="site-list__item site-list__item--delivery">
+          <li class="main-nav__item main-nav__item--delivery">
             <a class="site-list__link site-list__link--delivery" href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
@@ -128,12 +128,12 @@
   <main class="main-container">
     <ul class="catalog-links">
       <li class="catalog-links__item catalog-links__interior">
-        <a class="catalog-links__link catalog-links__link--interior">
+        <a class="catalog-links__link catalog-links__link--interior" href="#">
           Предметы интерьера
         </a>
       </li>
       <li class="catalog-links__item catalog-links__toy">
-        <a class="catalog-links__link catalog-links__link--toy">
+        <a class="catalog-links__link catalog-links__link--toy" href="#">
           Детские игрушки
         </a>
       </li>
@@ -178,7 +178,7 @@
             alt="корзинки">
         </picture>
         <p class="featured__price">Цена: 990 руб.</p>
-        <button class="featured__button button">Заказать</button>
+        <a class="featured__button button" href="#">Заказать</a>
       </div>
     </section>
     <section class="about">
@@ -216,9 +216,11 @@
           </h2>
           <blockquote class="reviews__item">
             <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-              стильными, а также набирают больше лайков!
+              Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков,
+              как у&nbsp;популярных
+              инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои
+              фотографии сразу стали более
+              стильными, а&nbsp;также набирают больше лайков!
             </p>
             <p class="reviews__contacts reviews__contacts--name">Анастасия Красильникова</p>
             <p class="reviews__contacts reviews__contacts--mail">@misssssiskras</p>
@@ -241,41 +243,46 @@
         </div>
       </div>
     </section>
+    <section class="contacts">
+      <div class="contacts__wrapper container">
+        <h2 class="contacts__tittle">Контакты</h2>
+        <table class="contacts__location">
+          <tbody class="contacts__location-table">
+            <tr class="contacts__parameters">
+              <td class="contacts__meaning contacts__meaning--name">e-mail:</td>
+              <td class="contacts__meaning contacts__meaning--value">
+                <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
+            </tr>
+            <tr class="contacts__parameters">
+              <td class="contacts__meaning contacts__meaning--name">адрес:</td>
+              <td class="contacts__meaning contacts__meaning--value">г. Санкт-Петербург <br> ул. Большая Конюшенная &nbsp;
+                &nbsp; д.
+                19/8,
+                офис 101</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="contacts__map">
+        <iframe class="contacts__map-frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          width="768" height="455" allowfullscreen
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+      </div>
+      <a class="contacts__button button" href="#">Напишите нам</a>
+    </section>
   </main>
-  <section class="contacts">
-    <div class="contacts__wrapper container">
-      <h2 class="contacts__tittle">Контакты</h2>
-      <table class="contacts__location">
-        <tbody class="contacts__location-table">
-          <tr class="contacts__parameters">
-            <td class="contacts__meaning contacts__meaning--name">e-mail:</td>
-            <td class="contacts__meaning contacts__meaning--value">
-              <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </td>
-          </tr>
-          <tr class="contacts__parameters">
-            <td class="contacts__meaning contacts__meaning--name">адрес:</td>
-            <td class="contacts__meaning contacts__meaning--value">г. Санкт-Петербург <br> ул. Большая Конюшенная д.
-              19/8,
-              офис 101</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="contacts__map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-        width="100%" height="100%" allowfullscreen
-        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-    </div>
-    <a class="contacts__button button" href="#">Напишите нам</a>
-  </section>
+
   <footer class="main-footer">
     <div class="main-footer__wrapper container">
       <div class="main-footer__logo">
-        <svg class="main-footer__icon" width="102" height="34">
-          <use xlink:href="#footer-logo"></use>
-        </svg>
+        <a class="main-footer__link" href="#">
+          <span class="visually-hidden">Логотип Мишка</span>
+          <svg class="main-footer__icon" width="102" height="34">
+            <use xlink:href="#footer-logo"></use>
+          </svg>
+        </a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -308,6 +315,7 @@
       <div class="main-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Логотип Академии</span>
           <svg class="copyright__icon" width="27" height="35">
             <use xlink:href="#academy-logo"></use>
           </svg>
@@ -315,10 +323,11 @@
       </div>
     </div>
   </footer>
-  <section class="modal">
+  <!-- modal--opened - окно открыто,  modal--closed - окно закрыто -->
+  <section class="modal modal--closed">
     <div class="modal__background"></div>
     <div class="modal__body">
-      <h2 class="modal__title">Добавить в корзину</h2>
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <form class="modal__form">
         <fieldset class="modal__set">
           <legend class="modal__set-title">Выберите размер:</legend>
@@ -329,11 +338,11 @@
             </div>
             <div class="modal__item">
               <input class="modal__input" type="radio" name="size" value="M" id="m" checked>
-              <label class="modal__label" for="s">M</label>
+              <label class="modal__label" for="m">M</label>
             </div>
             <div class="modal__item">
               <input class="modal__input" type="radio" name="size" value="L" id="l" checked>
-              <label class="modal__label" for="s">L</label>
+              <label class="modal__label" for="l">L</label>
             </div>
           </div>
         </fieldset>

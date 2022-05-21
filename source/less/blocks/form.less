@@ -64,16 +64,13 @@
 }
 
 .form__input {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
 }
 
 .form__input::placeholder {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 18px;
   opacity: 0.3;
 }
 
@@ -118,6 +115,11 @@
 .form__control--color:active::before {
   border-color: #000000;
   opacity: 0.3;
+}
+
+.form__input:focus-visible {
+  border-color: #62d1ba;
+  outline: none;
 }
 
 .form__control--radio::after {
@@ -221,6 +223,11 @@
   opacity: 1;
 }
 
+.form__input:focus-visible + .form__icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
 .form__icon {
   position: absolute;
   top: 36px;
@@ -268,6 +275,11 @@
   margin-top: 11px;
 }
 
+.form__input:focus + .form__control--radio::before,
+.form__input:focus + .form__control--color::before {
+  border-color: #62d1ba;
+}
+
 @media (min-width: @tablet-width) {
   .form__tittle::after {
     display: none;
@@ -288,19 +300,21 @@
     min-width: 668px;
     margin: 0;
     padding: 0;
+    position: relative;
   }
 
   .form__tittle {
-    width: 167px;
-    float: left;
     padding: 0;
     padding-top: 16px;
+    position: absolute;
+    left: 60px;
   }
 
   .form__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-left: 165px;
   }
 
   .form__wrapper-color {
@@ -383,7 +397,7 @@
 
   .form__item--number {
     padding-top: 48px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     margin: 0;
   }
 
@@ -400,6 +414,7 @@
     padding-left: 17px;
     width: 500px;
     box-sizing: border-box;
+    margin-left: 175px;
   }
 
   .form__input--mail {
@@ -438,7 +453,6 @@
 
   .form__input {
     background-color: inherit;
-    letter-spacing: 1.15px;
     font-size: 19px;
   }
 
@@ -446,6 +460,7 @@
     margin-top: 0;
     padding-top: 46px;
     padding-bottom: 30px;
+    margin-left: 0;
   }
 
   .form__item--more {
@@ -463,6 +478,7 @@
     margin-bottom: 20px;
     padding-top: 12px;
     padding-bottom: 31px;
+    margin-left: 175px;
   }
 
   .form__note {
@@ -537,6 +553,7 @@
   .form__list--more {
     max-width: 1050px;
     padding-bottom: 26px;
+    margin-left: 0;
   }
 
   .form__input--textarea,
@@ -559,7 +576,6 @@
   }
 
   .form__tittle--type {
-    text-align: center;
     padding-left: 0;
     margin-top: 4px;
   }
@@ -577,7 +593,6 @@
   }
 
   .form__tittle--color {
-    text-align: center;
     margin-top: 19px;
   }
 
@@ -603,7 +618,7 @@
   }
 
   .form__control--radio::after {
-    top: 16px;
+    top: 18px;
     left: 24px;
   }
 
@@ -613,7 +628,6 @@
   }
 
   .form__tittle--about {
-    text-align: center;
     margin-top: 31px;
   }
 
@@ -622,7 +636,6 @@
   }
 
   .form__tittle--number {
-    text-align: center;
     padding-right: 17px;
     min-width: 175px;
     box-sizing: border-box;
@@ -633,19 +646,21 @@
     padding-left: 60px;
     min-width: 175px;
     box-sizing: border-box;
-    margin-top: 23px;
+    margin-top: 18px;
     margin-left: 3px;
+    left: 0;
   }
 
   .form__tittle--more {
-    text-align: center;
     margin-right: 8px;
+    left: 62px;
   }
 
   .form__input--textarea {
     padding-top: 12px;
     padding-bottom: 31px;
     margin-top: 7px;
+    margin-left: 175px;
   }
 
   .form__footer {
@@ -660,8 +675,8 @@
   }
 
   .form__icon.form__icon--mail {
-    top: 24px;
-    right: 177px;
+    top: 16px;
+    right: 179px;
   }
 
   .form__icon.form__icon--phone {
@@ -671,6 +686,6 @@
 
   .form__input--mail {
     margin-bottom: 3px;
-    padding-bottom: 6px;
+    padding-bottom: 13px;
   }
 }
